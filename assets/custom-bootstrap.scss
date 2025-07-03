@@ -1,7 +1,5 @@
 @import '../bootstrap-5.3.7/scss/functions';
 @import '../bootstrap-5.3.7/scss/variables.scss';
-@import '../bootstrap-5.3.7/scss/mixins';
-@import '../bootstrap-5.3.7/scss/buttons';
 
 $h7-font-size: 0.75rem;
 $h8-font-size: 0.5rem;
@@ -33,12 +31,13 @@ $new-border-widths: (
 $border-widths: map-merge($border-widths, $new-border-widths);
 
 $btn-padding-x: 3rem;
-$btn-padding-x: 1rem;
+$btn-padding-y: 1rem;
 
 $grid-gutter-width: 0.5rem;
 $card-bg: black;
 $card-color: #00ffea;
 $card-border-radius: 2rem;
+$card-inner-border-radius: 2rem;
 
 $new-danger: #ff0077;
 $new-info: #00ffea;
@@ -50,6 +49,40 @@ $new-theme-colors: (
   'light': $new-light,
 );
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
+
 $btn-border-radius: 20px;
 $input-border-radius: 20px;
+
+$epicode-1: #5726c3;
+$epicode-2: #8625a5;
+$epicode-3: #cb2376;
+
+$EPICODE-colors: (
+  'epic1': $epicode-1,
+  'epic2': $epicode-2,
+  'epic3': $epicode-3,
+);
+$theme-colors: map-merge($theme-colors, $EPICODE-colors);
+
+$new-break-point1: 1600px;
+$new-break-point2: 1800px;
+
+$new-grid-breakpoints: (
+  xxxl: $new-break-point1,
+  xxxxl: $new-break-point2,
+);
+
+$grid-breakpoints: map-merge($grid-breakpoints, $new-grid-breakpoints);
+
+$new-conteiner-maxwidth1: 1520px;
+$new-conteiner-maxwidth2: 1720px;
+
+$new-container-max-widths: (
+  xxxl: $new-conteiner-maxwidth1,
+  xxxxl: $new-conteiner-maxwidth2,
+);
+$container-max-widths: map-merge(
+  $container-max-widths,
+  $new-container-max-widths
+);
 @import '../bootstrap-5.3.7/scss/bootstrap.scss';
