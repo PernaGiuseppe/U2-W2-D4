@@ -1,0 +1,53 @@
+@import '../bootstrap-5.3.7/scss/functions';
+@import '../bootstrap-5.3.7/scss/variables.scss';
+@import '../bootstrap-5.3.7/scss/mixins';
+@import '../bootstrap-5.3.7/scss/buttons';
+
+$h7-font-size: 0.75rem;
+$h8-font-size: 0.5rem;
+$h9-font-size: 0.25rem;
+$h10-font-size: 0.125rem;
+
+$new-font-sizes: (
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+  10: $h10-font-size,
+);
+
+$font-sizes: map-merge($font-sizes, $new-font-sizes);
+
+$border-width-6: 6px;
+$border-width-7: 7px;
+$border-width-8: 8px;
+$border-width-9: 9px;
+$border-width-10: 10px;
+
+$new-border-widths: (
+  6: $border-width-6,
+  7: $border-width-7,
+  8: $border-width-8,
+  9: $border-width-9,
+  10: $border-width-10,
+);
+$border-widths: map-merge($border-widths, $new-border-widths);
+
+$btn-padding-x: 3rem;
+$btn-padding-x: 1rem;
+
+$grid-gutter-width: 0.5rem;
+$card-bg: black;
+$card-color: #00ffea;
+$card-border-radius: 2rem;
+
+$new-danger: #ff0077;
+$new-info: #00ffea;
+$new-light: #f3eeff;
+
+$new-theme-colors: (
+  'info': $new-info,
+  'danger': $new-danger,
+  'light': $new-light,
+);
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+@import '../bootstrap-5.3.7/scss/bootstrap.scss';
