@@ -50,4 +50,6 @@ $new-theme-colors: (
   'light': $new-light,
 );
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
+$btn-border-radius: 20px;
+$input-border-radius: 20px;
 @import '../bootstrap-5.3.7/scss/bootstrap.scss';
